@@ -15,7 +15,8 @@ function App() {
 
     // Return the frontend app UI
     return (
-        // The frontend app is a simple button that calls the backend API
+        // The frontend app is a simple button that calls the backend API 
+        // and displays the response message
         <div className="App">
             <header className="App-header">
                 <button onClick={fetchMessage}>Get Message</button>
