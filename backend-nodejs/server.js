@@ -3,6 +3,7 @@ const path = require('path');  // Import the path module
 const app = express();
 const PORT = 5000;
 
+// Integrate our backend with the React frontend
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'build')));
 

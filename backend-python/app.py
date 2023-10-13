@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, send_from_directory
 
-# This is the path contains our react app (frontend)
-# and the static files to serve to the browser.
+# Integrate our backend with the React frontend
+# Serve static files from the React app
 app = Flask(__name__, static_folder="build", static_url_path="/")
 
 
