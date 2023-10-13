@@ -60,11 +60,19 @@ The React app will be accessible at `http://localhost:3000`.
      source venv/bin/activate
      ```
 
-4. Install the required Python packages:
+4. Generate and use the `requirements.txt` file:
 
-   ```bash
-   pip install flask
-   ```
+   - To create the `requirements.txt` file:
+
+     ```bash
+     pip freeze > requirements.txt
+     ```
+
+   - To install the required Python packages:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
 
 5. Start the Flask server:
 
@@ -121,7 +129,6 @@ The Node.js backend will be accessible at `http://localhost:5000`.
 - **Simplified Deployment**: By integrating the frontend into the backend, we can deploy a single application, simplifying the deployment process and reducing overhead.
   
 - **Flexibility in Choice**: Developers are not tied to a specific backend technology. Depending on the project's needs, one can easily switch between Flask, Node.js, or any other backend technology.
-
 
 ## Additional Insights:
 
