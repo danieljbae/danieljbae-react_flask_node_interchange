@@ -13,12 +13,14 @@ def get_message():
 
 
 # This route serves the React app (frontend) from the build directory.
+# path is the path after the domain name, e.g. www.example.com/<path>
+# this enables us to use react-router-dom for navigation
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
-def serve():
+def serve(path):
     return send_from_directory(app.static_folder, 'index.html')
 
 
 # This is the main entry point for starting the server.
 if __name__ == '__main__':
-    app.run(port=5050)
+    app.run(port=5050, debug=True)
