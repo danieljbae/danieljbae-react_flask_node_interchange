@@ -1,0 +1,13 @@
+# Node.js related
+node_modules/
+npm-debug.log
+
+# React build artifacts
+simple-app/.eslintcache
+simple-app/node_modules/
+simple-app/package-lock.json
+
+# Flask related
+backend-python/__pycache__/
+backend-python/*.pyc
+backend-python/venv/
