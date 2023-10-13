@@ -119,7 +119,3 @@ The Node.js backend will be accessible at `http://localhost:5000`.
 - **Simplified Deployment**: By integrating the frontend into the backend, we can deploy a single application, simplifying the deployment process and reducing overhead.
   
 - **Flexibility in Choice**: Developers are not tied to a specific backend technology. Depending on the project's needs, one can easily switch between Flask, Node.js, or any other backend technology.
-
----
-
-This README provides a comprehensive guide on setting up, running, and integrating the React frontend with Flask and Node.js backends.
