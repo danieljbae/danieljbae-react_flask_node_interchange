@@ -7,7 +7,8 @@ const PORT = 5000;
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'build')));
 
-// An api endpoint that returns a message
+// An API endpoint, that returns JSON data
+// Our react app calls this endpoint through a button click
 app.get('/api/message', (req, res) => {
     res.json({ message: 'JSON Response from: Node.js Express' });
 });

@@ -5,7 +5,8 @@ from flask import Flask, jsonify, send_from_directory
 app = Flask(__name__, static_folder="build", static_url_path="/")
 
 
-# This is the endpoint our react app calls (via button click)
+# An API endpoint, that returns JSON data
+# Our react app calls this endpoint through a button click
 @app.route('/api/message', methods=['GET'])
 def get_message():
     return jsonify({'message': 'JSON Response from Python Flask!'})
