@@ -1,8 +1,13 @@
 from flask import Flask, jsonify, send_from_directory
+from flask_sqlalchemy import SQLAlchemy
 
 # Integrate our backend with the React frontend
 # Serve static files from the React app
 app = Flask(__name__, static_folder="build", static_url_path="/")
+
+# Set up database connection
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://your_username:your_password@localhost/your_database_name'
+db = SQLAlchemy(app)
 
 
 # An API endpoint, that returns JSON data
